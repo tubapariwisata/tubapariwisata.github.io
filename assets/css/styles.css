@@ -76,43 +76,64 @@ i.glyphicon.glyphicon-search{
 }
 
 #background {
-  margin-top: -120px;
-  background: url(../assets/img/background.jpg) no-repeat;
+  background: url(assets/img/candi.jpg) no-repeat center center fixed;
   background-size: cover;
-  padding-top: 111px;
-  height: 638px;
-  max-height: 1112px;
-  color: black; /* Mengubah warna teks menjadi hitam */
+  padding: 100px 0;
 }
 
 #background .container {
   text-align: center;
+  color: white;
 }
 
-#background h1 {
-  font-family: nexa;
+#background .jumbotron {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#background h1,
+#background p {
+  font-family: 'nexa', sans-serif;
   margin-bottom: 12px;
 }
 
 #background p {
-  font-family: raleway;
-  margin-bottom: 12px;
   margin-top: 27px;
 }
 
-#background .btn {
-  color: black; /* Mengubah warna teks tombol menjadi hitam */
-  background-color: #ffffff; /* Mengubah warna latar tombol menjadi putih */
-  border-color: #ffffff; /* Mengubah warna border tombol menjadi putih */
+#background a.btn {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
-/* Gunakan media queries untuk menyesuaikan gaya pada berbagai ukuran layar */
+#background a.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Media queries untuk perangkat dengan lebar maksimum 768px (misalnya, tablet dan smartphone) */
 @media (max-width: 768px) {
   #background {
-    height: auto; /* Mengatur tinggi otomatis agar responsif */
-    padding-top: 60px; /* Menyesuaikan padding atas untuk tampilan di perangkat kecil */
+    padding: 50px 0; /* Mengurangi padding pada perangkat mobile */
+  }
+
+  #background .jumbotron {
+    padding: 10px; /* Mengurangi padding pada perangkat mobile */
+  }
+
+  #background h1,
+  #background p {
+    font-size: 18px; /* Mengurangi ukuran font pada perangkat mobile */
+    margin-bottom: 8px;
+  }
+
+  #background p {
+    margin-top: 15px;
   }
 }
+
 
 #home{
   text-align: center;
