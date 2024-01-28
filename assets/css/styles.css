@@ -75,42 +75,42 @@ i.glyphicon.glyphicon-search{
   color: rgb(184,182,182);
 }
 
-#background{
-  margin-top:-120px;
-  background:url(assets/img/background.jpg) no-repeat;
-  background-size:cover;
-  padding-top:111px;
-  height:638px;
-  max-height:1112px;
+#background {
+  margin-top: -120px;
+  background: url(assets/img/background.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 111px;
+  height: 638px;
+  max-height: 1112px;
+  color: black; /* Mengubah warna teks menjadi hitam */
 }
 
-#background .jumbotron {
-  background: none;
-  margin-left: 5%; /* Gunakan persentase untuk margin agar responsif */
-  max-width: 90%; /* Gunakan persentase untuk lebar maksimum agar responsif */
-  margin-top: 22px;
-  padding: 20px; /* Tambahkan padding agar kontennya tidak terlalu dekat dengan tepi */
+#background .container {
   text-align: center; /* Posisikan teks di tengah */
 }
 
-#background .jumbotron h1 {
+#background h1 {
   font-family: nexa;
-  color: white;
-  margin-bottom: -12px;
+  margin-bottom: 12px;
 }
 
-#background .jumbotron p {
+#background p {
   font-family: raleway;
-  color: white;
-  margin-bottom: -12px;
+  margin-bottom: 12px;
   margin-top: 27px;
+}
+
+#background .btn {
+  color: black; /* Mengubah warna teks tombol menjadi hitam */
+  background-color: #ffffff; /* Mengubah warna latar tombol menjadi putih */
+  border-color: #ffffff; /* Mengubah warna border tombol menjadi putih */
 }
 
 /* Gunakan media queries untuk menyesuaikan gaya pada berbagai ukuran layar */
 @media (max-width: 768px) {
-  #background .jumbotron {
-    margin-left: 0;
-    max-width: 100%;
+  #background {
+    height: auto; /* Mengatur tinggi otomatis agar responsif */
+    padding-top: 60px; /* Menyesuaikan padding atas untuk tampilan di perangkat kecil */
   }
 }
 
