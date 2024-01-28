@@ -86,8 +86,12 @@ i.glyphicon.glyphicon-search{
 }
 
 #background .container {
-  text-align: center; /* Posisikan teks di tengah */
+  text-align: center;
+  background: url(assets/img/candi.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
 }
+
 
 #background h1 {
   font-family: nexa;
