@@ -84,25 +84,34 @@ i.glyphicon.glyphicon-search{
   max-height:1112px;
 }
 
-#background .jumbotron{
-  background:none;
-  margin-left:137px;
-  max-width:1000px;
-  margin-top:22px;
+#background .jumbotron {
+  background: none;
+  margin-left: 5%; /* Gunakan persentase untuk margin agar responsif */
+  max-width: 90%; /* Gunakan persentase untuk lebar maksimum agar responsif */
+  margin-top: 22px;
+  padding: 20px; /* Tambahkan padding agar kontennya tidak terlalu dekat dengan tepi */
+  text-align: center; /* Posisikan teks di tengah */
 }
 
-#background .jumbotron h1{
-  font-family:nexa;
-  color:white;
-  margin-bottom:-12px;
+#background .jumbotron h1 {
+  font-family: nexa;
+  color: white;
+  margin-bottom: -12px;
 }
 
-#background .jumbotron p{
-  font-family:raleway;
-  color:white;
-  margin-bottom:-12px;
-  margin-top:27px;
-  padding-right:307px;
+#background .jumbotron p {
+  font-family: raleway;
+  color: white;
+  margin-bottom: -12px;
+  margin-top: 27px;
+}
+
+/* Gunakan media queries untuk menyesuaikan gaya pada berbagai ukuran layar */
+@media (max-width: 768px) {
+  #background .jumbotron {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 #home{
